@@ -14,9 +14,9 @@ GET     /message                    controllers.AsyncController.message
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 # ConnectionController
-GET     /api/action/connection/:id         @controllers.ConnectionController.next(id: String)
+GET     /api/action/connection/:id          @controllers.ConnectionController.next(id: String)
 
-PUT     /api/action/connection/:endpoint   @controllers.ConnectionController.update(endpoint: String)
+PUT     /api/action/connection/:endpoint    @controllers.ConnectionController.update(endpoint: String)
 
-GET     /api/metadata/connection/:id  @controllers.ConnectionController.getConnection(id: String)
+GET     /api/metadata/connection/:id        @controllers.ConnectionController.getConnection(id: String)
       

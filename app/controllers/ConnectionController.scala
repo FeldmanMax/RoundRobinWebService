@@ -1,8 +1,7 @@
 package controllers
 
-import javax.inject.Inject
-
 import api.ConnectionAPI
+import com.google.inject.Inject
 import models.{EndpointWeight, WeightRate}
 import play.api.mvc.{ControllerComponents, EssentialAction}
 import services._
